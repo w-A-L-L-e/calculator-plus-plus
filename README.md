@@ -3,7 +3,15 @@ A verry simple calculator made using the tools bison++ and flex++. This allows
 to make an efficient compiler or parser using c++.
 
 # Installation
-Just clone this and then do a make to build it
+First install the dependencies.
+```
+brew install flex bison
+```
+For a working bison++ under in macOS I've created a seperate git repo for this with a patched working version.
+https://github.com/w-A-L-L-e/bison-plus-plus
+
+
+Then just clone this and then do a make to build it
 ```
 $ make
 bison++ -d -o parser.cpp parser.y
